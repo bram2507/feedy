@@ -1,0 +1,298 @@
+/* 
+    Feedy : Coding App Screen Example 
+    Abraham de los Santos Alvarez Gómez 
+    Tokyo School - Frontend Developer
+ */
+
+/* CSS imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* 
+    Colors Palette :
+    ==============
+    lightBlue: #48cbbf;
+*/
+
+/* Initializing Margins - Paddings - Box sizing*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* General values for HTML elements */
+body{
+   background-color: white;
+}
+
+h1{
+    width: 95%;
+    font-weight: 600;
+    margin-top: 50px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.3em;
+    color: #14D2B8;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+/* ==================================== */
+/*             Page sections              */
+/* ==================================== */
+#details-content,
+#card-content,
+#publish-info-content,
+#action-content
+{
+    width: 100%;
+    min-height: 50px;
+}
+
+/* ===================================== */
+/*            details-content            */
+/* ==================================== */
+#details-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#details-content > div{
+    
+    text-decoration: none;
+}
+
+/* ==================================== */
+/*              card content            */
+/* ==================================== */
+#card-content{
+    width: 80%;
+    min-height: 350px;
+    background-color: white;
+    box-shadow: 0px 2px 10px rgb(0 0 0 / 70%);
+    margin: 0 auto;
+    margin-top: 25px;
+    
+}
+
+#card-content > div{
+    text-decoration: none;
+}
+
+.top-content{
+    width: 100%;
+    min-height: 60px;
+    background-color: white;
+    box-shadow: 3px 3px 6px rgb(0 0 0 / 15%);
+}
+
+.flex-top{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.flex-top > div{
+    text-decoration: none;
+  
+}
+
+.flex-top:first-child{
+    align-items: flex-start;
+}
+
+.flex-top:last-child{
+    align-items: flex-end
+}
+
+.flex-userName{
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    margin-top:15px;
+    margin-bottom:15px;  
+}
+
+.flex-userName > div{
+    text-decoration: none;
+}
+
+.flex-post{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+.flex-post > div{
+    text-decoration: none;
+    margin: 0 auto;
+   
+}
+
+.flex-price{
+    display: flex;
+    justify-content: stretch;
+    flex-wrap: nowrap;
+    text-align: center;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.flex-price > div{
+    
+   text-decoration: none;
+}
+
+#userName{
+    width: 50%;
+    margin-left: 5px;
+    margin-top: 20px;
+     
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#profile{
+    width: 45px;
+    height: 45px;
+    background-color: lightgrey;
+    border-radius: 100px;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+#post{
+    text-align: center;
+    padding: 2px; 
+    width: 70%;
+    border-radius: 10px;
+    height: 25px;
+    color: black;
+    background-color: rgb(20,210,184,0.2);
+    font-weight: 600;
+}
+
+/* ===================================== */
+/*          publish-info-content        */
+/* ==================================== */
+#publish-info-content{
+    width: 100%;
+    min-height: 150px;
+    margin: 0 auto;
+    margin-bottom: -25px;
+}
+
+.publish-text{
+    font-size: 0.95em;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+}
+
+.date-text{
+    color: black;
+    text-align: center;
+    margin-top: 3px;
+    font-weight: 450;
+}
+
+.middle-content{
+    width: 100%;
+    min-height: 250px;
+    background-color: lightgrey;
+}
+
+.bottom-content{
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    text-align: justify;
+    line-height: 2;
+    font-size: 16px;
+    padding: 15px 10px 10px 15px;
+}
+
+
+
+/* ===================================== */
+/*              action-content              */
+/* ==================================== */
+#action-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    
+}
+
+#action-content > input{
+    margin: 0 auto;
+}
+
+#send-button{
+    width: 70%;
+    height: 50px;
+    border-radius: 50px;
+    border: 1.5px solid #14D2B8;
+    background-color: transparent;
+    color: #14D2B8;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#publish-button{
+    width: 70%;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: #14D2B8;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/*              Media Querys            */
+/* Small devices - Movil - Tablet */
+@media screen and (max-width: 411px){
+    h1{
+       
+        font-size: 1.2em;
+        margin-top: 45px;
+    }
+
+    h2{
+        margin-top: 15px;
+    }
+}
+
+/* Large devices - Desktop */
+@media (min-width: 411px){
+    h1{
+       
+        font-size: 2em;
+        margin-top: 45px;
+    }
+
+    h2{
+        margin-top: 30px;
+    }
+
+    .bottom-content{
+        padding: 30px 10px 10px 15px;
+    }
+}

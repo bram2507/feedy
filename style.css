@@ -269,7 +269,27 @@ a{
 /*              Media Querys            */
 /* ==================================== */
 /* Small devices - Movil - Tablet */
-@media screen and (max-width: 411px){
+@media screen and (max-width: 280px){
+    h1{
+       
+        font-size: 1.2em;
+        margin-top: 45px;
+    }
+
+    h2{
+        margin-top: 15px;
+    }
+
+    #send-button{
+        font-size: 14px;
+    }
+
+    #publish-button{
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 411px){
     h1{
        
         font-size: 1.2em;
@@ -286,7 +306,7 @@ a{
     h1{
        
         font-size: 2em;
-        margin-top: 45px;
+        margin-top: 42px;
     }
 
     h2{
